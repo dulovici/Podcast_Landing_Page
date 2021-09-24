@@ -1,5 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Chivo', sans-serif;
+    font-size: 18px;
+    /* background-color: var(--black); */
+}
+
+
+:root {
+    --green: #54e6af;
+    --darkGray: #2c344b;
+    --gray: #5a668a;
+    --lightGray: #c2cbe5;
+    --black: #121725;
+    --white: #ffffff;
+
+}
+
+/* LAYOUT */
+
+.container {
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+}
+
+main {
+    width: 95%;
+    height: auto;
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    
+}
+
+    main .content {
+        position: relative;
+        padding-top: 4em;
+        width: 35%;
+        border: 1px solid red;
+        
+    }
+        .content .title h1{
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        .content p {
+            margin-top: 2em;
+            width: 70%;
+        }
+
+    main .image {
+        /* float: right; */
+        background-image: url(./assets/desktop/image-host.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 640px;
+        width: 60%;
+    }
+
