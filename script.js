@@ -1,3 +1,3 @@
 
 
-console.log('dev')
+console.log('main')
