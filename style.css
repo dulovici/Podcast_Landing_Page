@@ -9,7 +9,7 @@
 body {
     font-family: 'Chivo', sans-serif;
     font-size: 18px;
-    /* background-color: var(--black); */
+    background-color: var(--black);
 }
 
 
@@ -24,47 +24,99 @@ body {
 }
 
 /* LAYOUT */
-
-.container {
-    width: 100%;
-    height:100vh;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    
-}
+/* .container {
+    position: relative;
+} */
 
 main {
-    width: 95%;
-    height: auto;
-    display: flex;
     position: relative;
-    flex-direction: row-reverse;
-    
+    width: 100%;
+    background-image: url(./assets/desktop/image-host.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-    main .content {
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    width: 6em;
+}
+.dots {
+    position: absolute;
+    right: 0;
+    bottom: -7%;
+    
+}
+    .content {
         position: relative;
-        padding-top: 4em;
-        width: 35%;
-        border: 1px solid red;
-        
+        left: 20%;
+        width: 40%;
+        background-color: var(--black);
     }
-        .content .title h1{
-            font-weight: 300;
-            letter-spacing: 2px;
+    .content h1 {
+        color: var(--green);
+        font-weight: 300;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+    .content h1 span {
+        color: var(--white);
+    }
+    .content p {
+        width: 65%;
+        line-height: 1.5em;
+        color: #ffffffc5;
+        font-weight: 300;
+        font-size: .9rem;
+        margin-bottom: 2em;
+    }
+    .input-wr {
+        background-color: var(--gray);
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 28px;
+        overflow: hidden;
+    }
+        .input-wr input {
+            background-color: var(--gray);
+            border: none;
+            padding: 1em;
+            border-radius: 28px;
+            color: var(--white);
         }
-        .content p {
-            margin-top: 2em;
-            width: 70%;
+        .input-wr input::placeholder{
+            color: var(--lightGray);
+            padding:1em;
         }
+        .input-wr button {
+            border-radius: 28px;
+            width: 40%;
+            cursor: pointer;
+            background-color: var(--green);
+            border: none;
+            margin: 3px;
+        }
+    .error {
+        margin-bottom: 2em;
+        margin-top: .5em;
+        padding-left: 2em;
+        display: none;
+    }
 
-    main .image {
-        /* float: right; */
-        background-image: url(./assets/desktop/image-host.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 640px;
-        width: 60%;
+    .logos {
+        margin-top: 2em;
+        width: 100%;
+    }
+    .logos img{
+        opacity: .5;
+        margin-right: 2em;
+        width: 5.2em;
+
+        
     }
 
