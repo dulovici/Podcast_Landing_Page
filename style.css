@@ -10,6 +10,8 @@ body {
     font-family: 'Chivo', sans-serif;
     font-size: 18px;
     background-color: var(--black);
+    /* height: 100vh; */
+    
 }
 
 
@@ -23,25 +25,25 @@ body {
 
 }
 
-/* LAYOUT */
-/* .container {
-    position: relative;
-} */
+
 
 main {
     position: relative;
+    /* max-width: 1400px; */
     width: 100%;
+    height: 90vh;
     background-image: url(./assets/desktop/image-host.jpg);
     background-repeat: no-repeat;
     background-position: 100% 100%;
-    height: 700px;
+    /* height: 700px; */
     display: flex;
     flex-direction: column-reverse;
+    
 }
 
 .logo {
     position: absolute;
-    top: 5%;
+    top: 12%;
     left: 20%;
     width: 6em;
 }
@@ -110,13 +112,133 @@ main {
 
     .logos {
         margin-top: 2em;
-        width: 100%;
+        /* width: 80%; */
+        /* display: flex; */
     }
     .logos img{
         opacity: .5;
-        margin-right: 2em;
-        width: 5.2em;
+        margin-right: 1em;
+        width: 5em;     
+    }
 
+
+    /* Media */
+
+@media (max-width: 1120px) {
+
+    main{
+        background-image: url(./assets/tablet/image-host.jpg);
+        background-size: contain;
+        
+        height: 80vh;
+        
+    }
+    .logo {
+        left: 5%;
+        width: 9em;
+    }
+    .dots {
+        position: absolute;
+        left: 5%;
+        bottom: -25%;
         
     }
 
+    .content {
+        left: 5%;
+        width: 80%;
+    }
+    .content h1 {
+        font-size: 3.5rem;
+        margin-top: 1em;
+        max-height: 10vh;
+    }
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    .input-wr {
+        width: 50%;
+    }
+    .input-wr input {
+        padding: 1.2em;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 720px) {
+    main{
+        background-image: linear-gradient(
+                hsla(224, 35%, 11%, 0.85),
+                hsla(224, 35%, 11%, 0.85)
+            ),
+            url("./assets/mobile/image-host.jpg");
+
+        height: 100vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        
+    }
+
+    .logo {
+        position: static;
+        width: 9em;
+        margin-top: 3em;
+        
+    }
+    .dots {
+        display: none;
+    }
+    .content {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .title h1{
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
+    .content p {
+        width: 90%;
+        text-align: center;
+    }
+
+    .logos {
+        width: 100%;
+        order: 5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+    .input-wr {
+        order: 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        width: 100%;
+    }
+    .input-wr input {
+        width: 100%;
+        margin-bottom: 2em;
+        padding: 1.5em;
+    }
+    .input-wr button {
+        width: 100%;
+        padding: 1.2em;
+    }
+}
