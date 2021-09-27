@@ -317,16 +317,17 @@ main {
         justify-content: center;
         align-items: center;
         background-color: transparent;
-        width: 100%;
+        width: 80%;
     }
     .input-wr input {
         width: 100%;
         margin-bottom: 1em;
-        padding: 1.2em;
+        padding: 1.4em;
+        border-radius: 100px;
     }
     .input-wr button {
         width: 100%;
-        padding: 1.2em;
+        padding: 1.4em;
     }
 
     .error {
