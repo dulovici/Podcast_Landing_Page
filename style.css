@@ -173,7 +173,8 @@ main {
                 hsla(224, 35%, 11%, 0.85)
             ),
             url("./assets/mobile/image-host.jpg");
-        height: 100vh;
+        margin-top: 0em;
+        height: 120vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
@@ -253,16 +254,16 @@ main {
 }
 
 
-@media (max-height: 700px) {
+@media (max-height: 600px) {
     main {
         margin-top: 0em;
         background-size: cover;
         background-position: top;
-        height: 150vh;
+        height: auto;
     }
     .input-wr {
         padding-top: 1.5em;
-        width: 50%;
+        width: 70%;
     }
 }
 
