@@ -164,7 +164,7 @@ main {
 
     .logos img{
         margin-right: 3em;
-        width: 14%;
+        width: 15%;
     }
 }
 
@@ -247,7 +247,6 @@ main {
 
     .logos img{
         margin-right: 1em;
-        width: 20%  
     }
     
 
@@ -259,6 +258,7 @@ main {
         background-size: cover;
         background-position: center top;
         overflow: hidden;
+        height: 100vh;
     }
     .content h1 {
         font-size: 1.5rem !important
